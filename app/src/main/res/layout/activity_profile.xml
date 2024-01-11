@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EFEFEF"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/jumbotron"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_foto"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gugum Saefulah Zidni"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/jumbotron"
+        app:layout_constraintEnd_toEndOf="@+id/profile_foto"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/profile_foto"
+        app:layout_constraintTop_toBottomOf="@+id/profile_foto"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Backend Developer"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/jumbotron"
+        app:layout_constraintEnd_toEndOf="@+id/profile_foto"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/profile_foto"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="357dp"
+        android:layout_height="421dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/profile_jumbotron"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <LinearLayout
+        android:id="@+id/prodi"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Program studi"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Informatika"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="19dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/npm"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prodi"
+        app:layout_constraintVertical_bias="0.045">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NPM"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5200411371"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="19dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/npm"
+        app:layout_constraintVertical_bias="0.045">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sleman, Yogyakarta"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="19dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wa"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="92dp"
+        android:src="@drawable/wa"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/alamat"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <ImageView
+        android:id="@+id/ig"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/ig"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@id/gmail"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toEndOf="@+id/wa"
+        app:layout_constraintTop_toBottomOf="@+id/alamat"
+        app:layout_constraintVertical_bias="0.889" />
+
+    <ImageView
+        android:id="@+id/gmail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/gmail"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/ig"
+        app:layout_constraintTop_toBottomOf="@+id/alamat"
+        app:layout_constraintVertical_bias="0.881" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

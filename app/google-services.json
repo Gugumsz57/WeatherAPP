@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "235390660132",
+    "firebase_url": "https://aplikasicuaca-b82cd-default-rtdb.firebaseio.com",
+    "project_id": "aplikasicuaca-b82cd",
+    "storage_bucket": "aplikasicuaca-b82cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235390660132:android:0cfe98ba65c144a49872b1",
+        "android_client_info": {
+          "package_name": "com.example.hujan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_e7KhGKz0OwpjzrMTwdEhIqmQhSZTgFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Warna gradasi -->
+    <solid android:color="#fff" />
+<!--    <gradient-->
+<!--        android:startColor="#3659E9"-->
+<!--        android:centerColor="#3659E9"-->
+<!--    android:endColor="#94C4F3"-->
+<!--    android:type="linear"-->
+<!--    android:angle="20" />-->
+
+    <!-- Sudut sudut shape -->
+    <corners android:radius="10dp" />
+
+</shape>
